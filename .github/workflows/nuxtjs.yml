@@ -73,6 +73,7 @@ jobs:
       - name: Static HTML export with Nuxt
         run: |
           npm ci
+          npm run build
           npx nuxt generate
 
       - name: Upload artifact
